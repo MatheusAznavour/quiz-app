@@ -1,0 +1,161 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: rgb(255, 255, 255);
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#root h1,h2,h3{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 42px;
+
+color: #000000;
+}
+
+.PageNumber{
+    background: rgb(179, 179, 179);
+    border-radius: 10px;
+    height: 20px;
+    width: 115px;
+    margin: 0 0 10px 0;
+}
+.PageNumber span{
+    margin: 50px 15px;
+}
+
+.QuestionBox{
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    background: white;
+    border: 1pt solid;
+    border-radius: 10px;
+}
+.QuestionBox div{
+    display: grid;
+}
+
+@keyframes img{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.QuestionBox img{
+    padding-top: 10px;
+    margin: auto;
+    height: 200px;
+    animation: img 2s;
+}
+.QuestionLastBtn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    /***/
+    position: absolute;
+    top: 650px;
+    left: 510px;
+}
+.QuestionNextBtn{
+    border: none;
+    width: 100px;
+    height: 30px;
+    /***/
+    position: absolute;
+    top: 650px;
+    right: 510px;
+}
+.QuestionNextBtn:active{
+    top: 653px;
+    right: 515px;
+    background: rgb(21, 175, 41);
+    height: 25px;
+    width: 90px;
+}
+.QuestionLastBtn:active{
+    top: 653px;
+    left: 515px;
+    background: rgb(21, 175, 41);
+    height: 25px;
+    width: 90px;
+}
+.QuestionNextBtn:hover{
+    background: rgba(21, 175, 42, 0.568);
+    cursor: pointer;
+}
+.QuestionLastBtn:hover{
+    background: rgba(21, 175, 42, 0.568);
+    cursor: pointer;
+}
+
+.checkBox{
+    margin: 10px 0;
+}
+.checkBox button{
+    border: none;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 50px;
+    height: 40px;
+    width: 80%;
+}
+.checkBox button:hover{
+    background: rgba(21, 175, 42, 0.568);
+    cursor: pointer;
+}
+.checkBox button:active{
+    cursor: context-menu;
+}
+
+.Description{
+    margin:  40px auto;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    background: #7F7F7F;
+}
+.resultTitle{
+    margin: 0%;
+    color: white;
+    font-style: italic;
+    font-size: 12pt;
+    font-weight:100;
+    text-align: left;
+    padding-left: 10px;
+}
+.resultDescription{
+    font-size: 13pt;
+    font-style: italic;
+    padding-right: 20px;
+    color: white;
+    margin: 0 0 110px 0;
+}
+
+.healtResult{
+    margin: auto;
+    width: 300px;
+    background: #7F7F7F;
+    border-radius: 10px;
+}
+
+.healtResult h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 42px;
+    
+    color: #FFFFFF;
+}
+
+.healthyChoise{
+    padding: 20px 0 0 0;
+}
