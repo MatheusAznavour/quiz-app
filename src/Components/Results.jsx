@@ -6,6 +6,8 @@ function solvePoints(){
         return 'Healty'
     } else if(unhealthyPoint > healthyPoint){
         return 'unhealty'
+    } else if(healthyPoint > 0 && unhealthyPoint > 0 && healthyPoint == unhealthyPoint){
+        return "You're medium"
     } else{
         return 'You need to aswer!'
     }
